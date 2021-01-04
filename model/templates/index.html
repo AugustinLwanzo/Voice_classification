@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<form action="/result">
+	{%csrf_token%}
+	
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="meanfreq" name="meanfreq">
+   
+  </div>
+   <div class="form-group">
+   
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="median" name="median">
+   
+  </div>
+   <div class="form-group">
+   
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="centroid" name="centroid">
+   
+  </div>
+   <div class="form-group">
+   
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="meanfun" name="meanfun">
+   
+  </div>
+   <div class="form-group">
+  
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="maxdom" name="maxdom">
+   
+  </div>
+
+  <button type="submit" class="btn  btn-block" style="background-color: #8A2BE2;color: white;font-size: 16px;font-weight: bold;">Predict</button>
+</form>
